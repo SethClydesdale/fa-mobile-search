@@ -1,0 +1,101 @@
+
+/* search viewer */
+#fa_mobile_search {
+  background:#C4C4C6;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding-top:35px;
+  z-index:99998;
+}
+
+
+/* search content */
+#mobile_search_content {
+  height:100%;
+  width:100%;
+  overflow-y:auto;
+}
+
+
+/* search nav */
+#mobile_search_nav {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:99999;
+}
+
+#mobile_search_nav a { line-height:26px }
+#fa_mobile_search .mobile_set, ul#mNavbar { height:auto } /* height adjustment */
+ul#mNavbar { padding:3px 0 } /* nav padding */
+
+
+/* info texts */
+.mobile_search_info {
+  font-weight:bold;
+  text-align:center;
+  padding:3px;
+}
+
+
+/* topic list */
+#fa_mobile_search .forabg .icon, #fa_mobile_search .forabg .dterm {
+  background-repeat:no-repeat;
+  background-position:5px 50%;
+}
+
+#fa_mobile_search .forabg .dterm {
+  padding-left:35px;
+  width:80%;
+}
+
+
+/* message list */
+#fa_mobile_search .postprofile {
+  margin-top:16px;
+  text-align:center;
+}
+
+#fa_mobile_search .postprofile dd { display:none }
+#fa_mobile_search .postprofile .author, #fa_mobile_search .postprofile .author + dd {
+  display:inline;
+  margin:0 3px;
+}
+
+
+/* pagination */
+#fa_mobile_search p.pagination {
+  font-size:0;
+  text-align:center;
+}
+
+#fa_mobile_search p.pagination span a, #fa_mobile_search p.pagination span strong {
+  font-size:13px;
+  line-height:26px;
+  margin:3px;
+}
+
+#fa_mobile_search strong.defaultBtn { color:#FF0 } /* page actif*/
+
+
+/* search form adjustments */
+#fa_mobile_search .submit-buttons { text-align:center }
+#fa_mobile_search fieldset { padding:6px }
+#fa_mobile_search fieldset input.defaultBtn { margin:3px 0 }
+#fa_mobile_search fieldset dl select { max-width:90% }
+#fa_mobile_search fieldset dl { margin:6px 0 }
+#fa_mobile_search fieldset dl dt {
+  font-weight:bold;
+  margin-right:3px;
+  float:left;
+}
+
+
+/* removal */
+#fa_mobile_search #main-content > p:not(.pagination), #fa_mobile_search .topic-actions, #fa_mobile_search .right-box, #fa_mobile_search form[name="jumpbox"], #fa_mobile_search .forabg .header, #fa_mobile_search .forabg .lastpost, #fa_mobile_search .forabg .views, #fa_mobile_search .forabg .posts, #fa_mobile_search .forabg .span-tab, #fa_mobile_search .pag-img, #fa_mobile_search #main-content > :first-child {
+  display:none;
+}
