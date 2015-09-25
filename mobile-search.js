@@ -30,7 +30,7 @@
       
         var box = document.createElement('DIV'), preset = document.createElement('SELECT'), i;
         box.id = 'fa_mobile_search';
-        box.innerHTML = '<div id="mobile_search_content">' + _mobileSearch.lang.search_loading + '</div><div id="mobile_search_nav" class="mobile_title application_header">&nbsp;<a href="javascript:_mobileSearch.close();" class="defaultBtn" style="float:right">' + _mobileSearch.lang.search_stop + '</a>&nbsp;</div>';
+        box.innerHTML = '<div id="mobile_search_content">' + _mobileSearch.lang.search_loading + '</div><div id="mobile_search_nav" class="mobile_title application_header">&nbsp;<a href="javascript:_mobileSearch.close();" class="defaultBtn" style="float:right;margin-right:3px;">' + _mobileSearch.lang.search_stop + '</a></div>';
         
         for (i in _mobileSearch.presets) preset.innerHTML += '<option value="' + _mobileSearch.presets[i] + '">' + i + '</option>';
         preset.onchange = function() {
